@@ -1,0 +1,29 @@
+{
+    "name": "hareku/laravel-feedback-api",
+    "description": "Provide feedback api for laravel.",
+    "keywords": ["laravel", "feedback"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hareku",
+            "email": "hareku908@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.4"
+    },
+    "require-dev": {
+        "laravel/laravel": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hareku\\LaravelFeedbackAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hareku\\LaravelFeedbackAPI\\Tests\\": "tests/"
+        }
+    }
+}
