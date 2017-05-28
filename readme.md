@@ -8,7 +8,7 @@ This package provide feedback API to your Laravel project.
 
 Install with composer.
 
-`composer require hareku/laravel-rule-getter`
+`composer require hareku/laravel-feedback-api`
 
 include the service provider within `config/app.php`.
 
@@ -27,6 +27,8 @@ $ php artisan vendor:publish --provider="Hareku\LaravelFeedbackAPI\LaravelFeedba
 Setting is completed!
 
 ## Usage
+
+Route is preset. (post: /feedbacks)
 
 ### Post with axios (Javascript)
 
