@@ -30,7 +30,7 @@ class LaravelFeedbackAPIServiceProvider extends ServiceProvider
         // View
         $this->loadViewsFrom(__DIR__.'/../views', 'feedback');
         $this->publishes([
-            __DIR__.'../views' => resource_path('views/vendor/feedback'),
+            __DIR__.'/../views' => resource_path('views/vendor/feedback'),
         ]);
 
         // Translation
