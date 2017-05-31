@@ -17,9 +17,6 @@ class LaravelFeedbackAPIServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/feedback.php' => config_path('feedback.php'),
         ]);
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/feedback.php', 'feedback'
-        );
 
         // Migration
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
@@ -44,6 +41,8 @@ class LaravelFeedbackAPIServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/feedback.php', 'feedback'
+        );
     }
 }
